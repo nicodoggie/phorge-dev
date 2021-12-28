@@ -1,7 +1,0 @@
-{
-  "phabricator.uri": "https://we.phorge.it/",
-  "load": [
-    "src/"
-  ],
-  "history.immutable": false
-}
