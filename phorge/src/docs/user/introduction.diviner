@@ -1,0 +1,44 @@
+@title Introduction
+@group intro
+
+This document provides a high-level overview of the Phorge project.
+
+= What is Phorge? =
+
+**Phorge** (pronounced like the word //forge//) is a suite of web
+applications which make it easier to build software, particularly when working
+with teams. Phorge is a fork of Phabricator, which in turn is largely based on
+Facebook's internal tools.
+
+The major components of Phorge are:
+
+  - **Differential**, a code review tool; and
+  - **Diffusion**, a repository browser; and
+  - **Maniphest**, a bug tracker; and
+  - **Phriction**, a wiki.
+
+Phorge also includes a number of smaller tools.
+
+= Why use Phorge? =
+
+Phorge gives you a box of solid tools for a comparatively small setup cost.
+The tools all work together and are richly integrated. The whole thing is free
+and open source. You own all your data. Phorge is extremely fast and proven
+to scale both to large datasets (Facebook has 500,000+ commits across many
+repositories) and large organizations (Facebook has 500+ fulltime engineers).
+Phorge's tools are easy to learn, understand, and use.
+
+However, Phorge may also not be a good solution for you:
+
+  - If you develop primarily on Windows, you are likely to find integration
+    with the toolsets you use lacking.
+  - If you don't use SVN, Git or Mercurial, you'll have to add support for your
+    VCS before you can get anywhere.
+  - If you loathe PHP, well, it's written in PHP. Sorry. It is a victim of
+    circumstances. We assert it is well-written PHP, at least.
+
+= Next Steps =
+
+Continue by:
+
+  - installing Phorge with the @{article:Installation Guide}.

@@ -1,0 +1,17 @@
+@title Reporting Security Vulnerabilities
+@group intro
+
+Describes how to report security vulnerabilities in Phorge.
+
+Overview
+========
+
+Phorge accepts bug reports on the upstream install.  Please use the
+[[https://we.phorge.it/maniphest/task/edit/form/1/ | security reporting form]]
+to report security vulnerabilities.
+
+If you aren't sure if something qualifies, you can submit the issue as a normal
+ bug report. For instructions, see @{article:Contributing Bug Reports}.
+
+General information about security changes is reported in the
+[[ https://we.phorge.it/w/changelog/ | Changelog ]].

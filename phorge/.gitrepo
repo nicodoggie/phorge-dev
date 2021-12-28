@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = ssh://git@we.phorge.it/source/phorge.git
+	branch = master
+	commit = b293e6ffed0ded5c13ace43275b80e31d5c4397d
+	parent = a0c204388f72a1acb3c524aae7282e66308bc8bc
+	method = merge
+	cmdver = 0.4.3

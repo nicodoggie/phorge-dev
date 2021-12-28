@@ -1,0 +1,39 @@
+{
+  "name": "flavor",
+  "title": "Phorge Flavor Text",
+  "short": "Flavor Text",
+  "preface": "A collection of short articles which pertain to software development in general, not necessarily to Phorge specifically.",
+  "root": "../../../",
+  "uri.source":
+    "https://we.phorge.it/diffusion/P/browse/master/%f$%l",
+  "rules": {
+    "(\\.diviner$)": "DivinerArticleAtomizer"
+  },
+  "exclude": [
+    "(^externals/)",
+    "(^resources/)",
+    "(^scripts/)",
+    "(^src/docs/contributor/)",
+    "(^src/docs/tech/)",
+    "(^src/docs/user/)",
+    "(^support/)",
+    "(^webroot/rsrc/externals/)"
+  ],
+  "groups": {
+    "javascript": {
+      "name": "Javascript"
+    },
+    "lore": {
+      "name": "Phorge Lore"
+    },
+    "php": {
+      "name": "PHP"
+    },
+    "review": {
+      "name": "Revision Control and Code Review"
+    },
+    "sundry": {
+      "name": "Sundries"
+    }
+  }
+}
