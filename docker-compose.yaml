@@ -4,16 +4,23 @@ services:
     build: .
     image: nicodoggie/phorge
     expose: [9000]
+    volumes:
+      - ./phorge:/srv/phorge:rw
+      - ./arcanist:/srv/arcanist:ro
+      - ./conf/phorge/local.json:/srv/phorge/local/local.json:rw
+      - ./conf/php/php-fpm.d:/usr/local/etc/php-fpm.d:ro
   nginx:
     image: nginx:latest
     ports:
       - 80:80
     volumes:
-      - ./phorge:/srv/phorge:ro
-      - ./arcanist:/srv/arcanist:ro
-      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
-      - ./nginx/docker.conf:/etc/nginx/conf.d/docker.conf:ro
+      - ./phorge:/srv/phorge:rw
+      - ./arcanist:/srv/arcanist:rw
+      - ./conf/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
   mysql:
     image: mysql:8
+    expose: [3306]
     environment:
-      - MYSQL_ROOT_PASSWORD=phorgetest
+      - MYSQL_ROOT_PASSWORD=${MYSQL_PASSWORD}
+volumes:
+  phorge_config:
