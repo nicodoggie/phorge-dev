@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  phorge:
+    build: .
+    image: nicodoggie/phorge
+  nginx:
+    image: nginx:latest
+  mysql:
+    image: mysql:8
+    environment:
+      - MYSQL_ROOT_PASSWORD=phorgetest
