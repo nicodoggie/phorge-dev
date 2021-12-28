@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = ssh://git@we.phorge.it/source/arcanist.git
+	branch = master
+	commit = 4230292997cef41ae2ec3259db009ce372b9ae79
+	parent = 0a07bb889c2a9988e6ca684b37883d30204cb900
+	method = merge
+	cmdver = 0.4.3
